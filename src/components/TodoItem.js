@@ -9,6 +9,9 @@ class TodoItem extends React.Component {
     isCompleted = () => {
         if (this.props.data.completed) { return styles.strikethrough }
     };
+    aaa = () => {
+        this.props.markTodoAsCompleted(this.props.data.completed)
+    };
 
     render() {
         return (
@@ -16,7 +19,7 @@ class TodoItem extends React.Component {
                 <input
                     className={styles.checkbox}
                     type="checkbox"
-                    onChange={this.props.markTodoAsCompleted}
+                    onChange={this.aaa}
                 />
                 <p className={this.isCompleted()}>
                     {this.props.data.title}

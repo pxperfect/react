@@ -27,8 +27,8 @@ class App extends React.Component {
         ]
     };
 
-    markTodoAsCompleted = () => {
-        console.log('from app.js')
+    markTodoAsCompleted = (id) => {
+        console.log(id)
     };
 
     render() {
