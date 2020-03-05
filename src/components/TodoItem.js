@@ -6,23 +6,26 @@ import styles from './TodoItem.module.css';
 // Class components are available to have they own state
 class TodoItem extends React.Component {
     // Render method has to return JSX and have at least on wrapping element.
+
     isCompleted = () => {
         if (this.props.data.completed) { return styles.strikethrough }
     };
-    aaa = () => {
-        this.props.markTodoAsCompleted(this.props.data.completed)
+    changeHandler = () => {
+        const {id , title, completed} = this.props.data;
+        return this.props.markTodoAsCompleted(id);
     };
 
     render() {
+        const {id , title, completed} = this.props.data;
         return (
             <div className={styles.wrapper}>
                 <input
                     className={styles.checkbox}
                     type="checkbox"
-                    onChange={this.aaa}
+                    onChange={this.changeHandler}
                 />
                 <p className={this.isCompleted()}>
-                    {this.props.data.title}
+                    {title}
                 </p>
             </div>
         )
