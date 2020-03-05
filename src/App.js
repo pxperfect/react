@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// Components
+import Todos from "./components/Todos";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Class component need to be extended by React.Component object.
+// Class components are available to have they own state
+class App extends React.Component {
+    // State is component data container.
+    state = {
+        todos: [
+            {
+                id: 1,
+                title: 'todo 1',
+                completed: true
+            },
+            {
+                id: 2,
+                title: 'todo 2',
+                completed: false
+            },
+            {
+                id: 3,
+                title: 'todo 3',
+                completed: false
+            },
+        ]
+    };
+
+    markTodoAsCompleted = () => {
+        console.log('from app.js')
+    };
+
+    render() {
+        // Passing data between component is available through "props"
+        // Props are custom JSX(HTML) attributes which are available later in receiving component.
+        return (
+            <div className="App">
+                <Todos todos={this.state.todos} markTodoAsCompleted={this.markTodoAsCompleted}/>
+            </div>
+        );
+    }
 }
+
 
 export default App;

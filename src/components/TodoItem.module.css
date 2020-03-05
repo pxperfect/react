@@ -1,0 +1,16 @@
+.redItem {
+    color: red;
+}
+.wrapper {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border-bottom: 1px darkgray dotted;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+.checkbox {
+    margin: 16px;
+}
