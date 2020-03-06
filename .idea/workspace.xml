@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="895e63dd-601c-46d3-870e-9a1b4bc9b141" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TodoItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todosStyles.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +44,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -65,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583342951833</updated>
       <workItem from="1583342953629" duration="3785000" />
-      <workItem from="1583422076422" duration="8607000" />
+      <workItem from="1583422076422" duration="8866000" />
+      <workItem from="1583508803879" duration="4012000" />
     </task>
     <task id="LOCAL-00001" summary="awdgb">
       <created>1583432575911</created>
@@ -81,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583433823838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="awdgb">
+      <created>1583434689880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583434689880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,18 +114,18 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="635" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1583344422150" />
-    <state x="499" y="35" key="CommitChangelistDialog2" timestamp="1583433823570">
+    <state x="499" y="35" key="CommitChangelistDialog2" timestamp="1583434689592">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="499" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1583433823570" />
+    <state x="499" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1583434689592" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1583422754130">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.23.1920.1177@0.23.1920.1177" timestamp="1583422754130" />
-    <state x="460" y="283" key="Vcs.Push.Dialog.v2" timestamp="1583433832834">
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2" timestamp="1583434696440">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="460" y="283" key="Vcs.Push.Dialog.v2/0.23.1920.1177@0.23.1920.1177" timestamp="1583433832834" />
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2/0.23.1920.1177@0.23.1920.1177" timestamp="1583434696440" />
     <state x="709" y="238" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583422733453">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>

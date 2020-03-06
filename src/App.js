@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import styles from './App.module.css'
 // Components
 import Todos from "./components/Todos";
 
@@ -12,7 +13,7 @@ class App extends React.Component {
             {
                 id: 1,
                 title: 'todo 1',
-                completed: true
+                completed: false
             },
             {
                 id: 2,
@@ -26,17 +27,34 @@ class App extends React.Component {
             },
         ]
     };
-
     markTodoAsCompleted = (id) => {
-        console.log(id)
+        this.setState({ todos: this.state.todos.map(todo => {
+            if (todo.id === id) {
+                todo.completed = !todo.completed;
+            }
+            return todo;
+            })
+        })
+    };
+    removeTodo = (id) => {
+        const todoCopy = this.state.todos.slice();
+        const todoIndex = todoCopy.findIndex(todo => {
+            return todo.id === id;
+        });
+        todoCopy.splice(todoIndex, 1);
+        this.setState({todos: todoCopy});
     };
 
     render() {
         // Passing data between component is available through "props"
         // Props are custom JSX(HTML) attributes which are available later in receiving component.
         return (
-            <div className="App">
-                <Todos todos={this.state.todos} markTodoAsCompleted={this.markTodoAsCompleted}/>
+            <div className={styles.wrapper}>
+                <Todos
+                    todos={this.state.todos}
+                    markTodoAsCompleted={this.markTodoAsCompleted}
+                    removeTodo={this.removeTodo}
+                />
             </div>
         );
     }

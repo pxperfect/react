@@ -16,6 +16,7 @@ class Todos extends React.Component {
                             key={data.id}
                             data={data}
                             markTodoAsCompleted={this.props.markTodoAsCompleted}
+                            removeTodo={this.props.removeTodo}
                         />
                     )
             })

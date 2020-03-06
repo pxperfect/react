@@ -7,26 +7,27 @@ import styles from './TodoItem.module.css';
 class TodoItem extends React.Component {
     // Render method has to return JSX and have at least on wrapping element.
 
-    isCompleted = () => {
-        if (this.props.data.completed) { return styles.strikethrough }
+    isCompleted(completed) {
+        if (completed) { return styles.strikethrough }
     };
-    changeHandler = () => {
-        const {id , title, completed} = this.props.data;
-        return this.props.markTodoAsCompleted(id);
-    };
-
     render() {
-        const {id , title, completed} = this.props.data;
+        const {id, title, completed} = this.props.data;
         return (
             <div className={styles.wrapper}>
                 <input
                     className={styles.checkbox}
                     type="checkbox"
-                    onChange={this.changeHandler}
+                    onChange={this.props.markTodoAsCompleted.bind(this, id)}
                 />
-                <p className={this.isCompleted()}>
+                <p className={this.isCompleted(completed)}>
                     {title}
                 </p>
+                <button
+                    className={styles.removeButton}
+                    onClick={this.props.removeTodo.bind(this, id)}
+                >
+                    Remove
+                </button>
             </div>
         )
     }

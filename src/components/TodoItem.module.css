@@ -8,6 +8,14 @@
     align-items: baseline;
     border-bottom: 1px darkgray dotted;
 }
+.removeButton {
+    margin: 0 16px 0 auto;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
 .strikethrough {
     text-decoration: line-through;
 }
