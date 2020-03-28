@@ -1,0 +1,21 @@
+.addTodoWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 8px 0;
+}
+.addTodoInput {
+    margin: 0 auto;
+    height: 24px;
+    padding: 8px;
+    width: 100%;
+}
+.addTodoButton {
+    margin-left: 16px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
