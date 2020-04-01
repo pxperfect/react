@@ -1,8 +1,11 @@
-// React
+// React.
 import React from 'react';
 import '../../App.css';
 import styles from './TodosRoute.module.css'
-// Components
+// Redux.
+import {connect} from 'react-redux'
+
+// Components.
 import Todos from "../Todos/Todos";
 import TodoSearch from "../TodoSearch/TodoSearch";
 import AddTodo from "../AddTodo/AddTodo";
@@ -11,8 +14,10 @@ import AddTodo from "../AddTodo/AddTodo";
 // Class components are available to have they own state
 class TodosRoute extends React.Component {
     // componentDidMount lifecycle method
-    componentDidMount() {
-        this.setTodos();
+    // Tutej Jacek.
+    async componentDidMount() {
+        const fetchedTodos = await this.props.fetchTodos();
+        this.props.setTodos(fetchedTodos);
     }
     // State is component data container.
     state = {
@@ -26,7 +31,7 @@ class TodosRoute extends React.Component {
         const todos = [...await this.fetchTodos()];
         todos.length = 10;
         todos.forEach(todo => todo.visibility = true);
-        this.setState({todos: todos});
+        // this.setState({todos: todos});
     };
     markTodoAsCompleted = (id) => {
         this.setState({ todos: this.state.todos.map(todo => {
@@ -76,7 +81,7 @@ class TodosRoute extends React.Component {
                 <TodoSearch search={this.search}/>
                 <AddTodo addTodo={this.addTodo}/>
                 <Todos
-                    todos={this.state.todos}
+                    todos={this.props.todos}
                     markTodoAsCompleted={this.markTodoAsCompleted}
                     removeTodo={this.removeTodo}
                 />
@@ -85,5 +90,21 @@ class TodosRoute extends React.Component {
     }
 }
 
+const mapStateToProps = state => {
+    return {
+        todos: state.todos
+    }
+};
 
-export default TodosRoute;
+const mapDispatchToProps = (dispatch) => {
+  return {
+      fetchTodos: async () => {
+          const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+          return response.json();
+      },
+      setTodos: (todos) => { dispatch({type: 'SET_TODOS', todos}) }
+    }
+};
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodosRoute);
