@@ -1,51 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="629acd79-f384-4b15-9e03-a34359c5162f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/BuildControll/BuildControll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/BuildControll/BuildControll.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/BuildControllFooter/BuildControllFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/BuildControllFooter/BuildControllFooter.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/BuildControlls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BuildControlls/Buildcontrolls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/Burger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/Burger.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/BurgerIngredient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/BurgerIngredient/BurgerIngredient.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/PurchaseModal/PurchaseModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Burger/PurchaseModal/PurchaseModal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItem/NavigationItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItem/NavigationItem.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/Aux.js" afterDir="false" />
+    <list default="true" id="629acd79-f384-4b15-9e03-a34359c5162f" name="Default Changelist" comment="no message">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,22 +87,42 @@
       <workItem from="1586080487723" duration="182000" />
       <workItem from="1586185973800" duration="431000" />
       <workItem from="1586787961541" duration="4837000" />
-      <workItem from="1589105988716" duration="48944000" />
+      <workItem from="1589105988716" duration="51257000" />
     </task>
+    <task id="LOCAL-00001" summary="no message">
+      <created>1589557126712</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589557126712</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="no message" />
+    <option name="LAST_COMMIT_MESSAGE" value="no message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="635" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585992392867">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="635" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1585992392867" />
+    <state x="490" y="35" key="CommitChangelistDialog2" timestamp="1589557811966">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="490" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1589557811966" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1589384807292">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.23.1920.1177@0.23.1920.1177" timestamp="1589384807292" />
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2" timestamp="1589557817501">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2/0.23.1920.1177@0.23.1920.1177" timestamp="1589557817501" />
     <state x="100" y="123" width="1720" height="977" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589121816664">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>

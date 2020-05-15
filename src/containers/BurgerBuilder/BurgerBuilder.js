@@ -54,20 +54,8 @@ class BurgerBuilder extends React.Component{
     };
 
     render() {
-        const purchaseModalWrapper = (
-            <ModalConstructor
-                manageModal={this.manageModal}
-                header='Purchase summary'>
-                <PurchaseModal
-                    key='purchaseModal'
-                    showModal={this.state.purchaseModal}
-                    ingredients={this.state.ingredients}/>
-            </ModalConstructor>
-        );
         return (
             <Aux>
-                {/*{ this.state.purchaseModal ? purchaseModalWrapper : null }*/}
-                {purchaseModalWrapper}
                 <Burger ingredients={this.state.ingredients}/>
                 <BuildControlls
                     ingredients={this.state.ingredients}
@@ -75,6 +63,14 @@ class BurgerBuilder extends React.Component{
                     purchasable={this.state.purchasable}
                     managePurchaseSummaryModal={this.manageModal}
                     manageIngredientCount={this.manageIngredientCount}/>
+                <ModalConstructor
+                    show={this.state.purchaseModal}
+                    manageModal={this.manageModal}
+                    header='Purchase summary'>
+                    <PurchaseModal
+                        key='purchaseModal'
+                        ingredients={this.state.ingredients}/>
+                </ModalConstructor>
             </Aux>
         )
     }

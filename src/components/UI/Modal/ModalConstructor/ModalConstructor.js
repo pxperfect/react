@@ -4,19 +4,27 @@ import Backdrop from "../../Backdrop/Backdrop";
 import ModalFooter from "../ModalFooter/ModalFooter";
 import styles from "./ModalConstructor.module.css"
 
-const modalConstructor = (props) => {
-    return (
+class modalConstructor extends React.Component {
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return nextProps.show !== this.props.show;
+    }
+
+    render() {
+        return this.props.show ? (
             <div className={styles.modalWrapper}>
                 <div className={styles.modalBodyWrapper}>
-                    <p className={styles.header}>{props.header}</p>
-                    {props.children}
+                    <p className={styles.header}>{this.props.header}</p>
+                    {this.props.children}
                     <ModalFooter
-                        manageModal={props.manageModal}
-                        modalName={props.children.key}/>
+                        manageModal={this.props.manageModal}
+                        modalName={this.props.children.key}/>
                 </div>
-                <Backdrop clicked={ () => {props.manageModal(props.children.key, 'CLOSE')} }/>
+                <Backdrop clicked={() => {
+                    this.props.manageModal(this.props.children.key, 'CLOSE')
+                }}/>
             </div>
-    )
+        ) : null
+    }
 };
 
 export default modalConstructor;
