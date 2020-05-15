@@ -1,0 +1,10 @@
+.buildControllFooterWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 48px;
+    font-size: 24px;
+    padding: 8px;
+    margin: auto;
+}

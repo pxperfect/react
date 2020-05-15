@@ -1,0 +1,11 @@
+.navigationItem a {
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navigationItem a:hover,
+.active a{
+    background-color: blue;
+}

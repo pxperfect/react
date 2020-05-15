@@ -1,0 +1,52 @@
+.button {
+    display: flex;
+    align-items: baseline;
+    border: none;
+    color: white;
+    padding: 0 16px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+}
+
+.primaryButton {
+    background-color: dodgerblue;
+}
+
+.primaryButton:hover {
+    box-shadow: 0 2px 10px 2px rgba(30, 144, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+.primaryButton:disabled {
+    background-color: gray;
+}
+
+.primaryButton:disabled:hover {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+}
+
+.dangerButton {
+    background-color: darkred;
+    margin-left: 8px;;
+}
+
+.dangerButton:hover {
+    box-shadow: 0 2px 10px 2px rgba(130, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.dangerButton:disabled {
+    background-color: gray;
+}
+
+.dangerButton:disabled:hover {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+}

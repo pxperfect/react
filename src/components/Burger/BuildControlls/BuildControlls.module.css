@@ -1,0 +1,18 @@
+.buildControllWrapper {
+    box-sizing: border-box;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    width: 320px;
+    margin: auto;
+    /*height: 148px;*/
+    list-style: none;
+    padding: 0;
+}
+
+.buildControllUlWrapper {
+    border-bottom: 1px solid lightslategray;
+}
+
+.buildControllUlWrapper:last-child {
+    border-bottom: none;
+}

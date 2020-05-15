@@ -1,0 +1,6 @@
+.navigationItems {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
