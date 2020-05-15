@@ -1,9 +1,9 @@
 // React.
 import React from "react";
 // Higher order components.
-import Aux from "../../hoc/Aux";
+import Aux from "../Aux/Aux";
 // Components.
-import Navigation from "../Navigation/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 // CSS.
 import styles from './Layout.module.css'
 import cssreset from '../../common/styles/styles.css'

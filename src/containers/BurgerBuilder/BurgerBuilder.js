@@ -1,7 +1,7 @@
 // React.
 import React from "react";
 // Higher order components.
-import Aux from "../../hoc/Aux";
+import Aux from "../../hoc/Aux/Aux";
 // Components.
 import Burger from "../../components/Burger/Burger";
 import BuildControlls from "../../components/Burger/BuildControlls/Buildcontrolls";

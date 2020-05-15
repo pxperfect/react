@@ -1,5 +1,5 @@
 import React from "react";
-import Aux from "../../../../hoc/Aux";
+import Aux from "../../../../hoc/Aux/Aux";
 import Backdrop from "../../Backdrop/Backdrop";
 import ModalFooter from "../ModalFooter/ModalFooter";
 import styles from "./ModalConstructor.module.css"
@@ -25,6 +25,6 @@ class modalConstructor extends React.Component {
             </div>
         ) : null
     }
-};
+}
 
 export default modalConstructor;
