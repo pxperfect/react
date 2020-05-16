@@ -10,9 +10,9 @@ const purchaseModal = (props) => {
                     const ingredientObject = ingredients[ingredient];
                     return (
                         <li
-                            key={Math.random()}
-                            className={styles.purchaseModalLi}>
-                            { `${ingredientObject.amount}x ${ingredient} ` }<strong>{ingredientObject.price}$</strong>
+                            key={ Math.random() }
+                            className={ styles.purchaseModalLi }>
+                            { `${ingredientObject.amount}x ${ingredient} ` }<strong>{ ingredientObject.price }$</strong>
                         </li>
                     )
                 })

@@ -11,17 +11,16 @@ class modalConstructor extends React.Component {
 
     render() {
         return this.props.show ? (
-            <div className={styles.modalWrapper}>
-                <div className={styles.modalBodyWrapper}>
-                    <p className={styles.header}>{this.props.header}</p>
-                    {this.props.children}
+            <div className={ styles.modalWrapper }>
+                <div className={ styles.modalBodyWrapper }>
+                    <p className={ styles.header }>{ this.props.header }</p>
+                    { this.props.children }
                     <ModalFooter
-                        manageModal={this.props.manageModal}
-                        modalName={this.props.children.key}/>
+                        submitFunction={ this.props.submitFunction }
+                        cancelFunction={ this.props.cancelFunction }
+                        modalName={ this.props.children.key }/>
                 </div>
-                <Backdrop clicked={() => {
-                    this.props.manageModal(this.props.children.key, 'CLOSE')
-                }}/>
+                <Backdrop clickFunction={ this.props.backdropClickFunction || this.props.cancelFunction }/>
             </div>
         ) : null
     }

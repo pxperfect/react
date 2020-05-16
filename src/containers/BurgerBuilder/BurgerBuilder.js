@@ -58,18 +58,20 @@ class BurgerBuilder extends React.Component{
             <Aux>
                 <Burger ingredients={this.state.ingredients}/>
                 <BuildControlls
-                    ingredients={this.state.ingredients}
-                    totalPrice={this.state.totalPrice}
-                    purchasable={this.state.purchasable}
-                    managePurchaseSummaryModal={this.manageModal}
-                    manageIngredientCount={this.manageIngredientCount}/>
+                    ingredients={ this.state.ingredients }
+                    totalPrice={ this.state.totalPrice }
+                    purchasable={ this.state.purchasable }
+                    managePurchaseSummaryModal={ this.manageModal }
+                    manageIngredientCount={ this.manageIngredientCount }/>
+                {/*modals*/}
                 <ModalConstructor
                     show={this.state.purchaseModal}
-                    manageModal={this.manageModal}
+                    submitFunction={ () => {this.manageModal('purchaseModal', 'CLOSE')} }
+                    cancelFunction={ () => {this.manageModal('purchaseModal', 'CLOSE')} }
                     header='Purchase summary'>
                     <PurchaseModal
                         key='purchaseModal'
-                        ingredients={this.state.ingredients}/>
+                        ingredients={ this.state.ingredients }/>
                 </ModalConstructor>
             </Aux>
         )

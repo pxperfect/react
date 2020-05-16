@@ -6,12 +6,12 @@ const modalFooter = (props) => {
     return (
         <div className={styles.modalFooterWrapper}>
             <Button
-                clicked={ () => {props.manageModal(props.modalName, 'CLOSE')} }
+                clicked={ props.submitFunction }
                 type='PRIMARY'>
                 Continue
             </Button>
             <Button
-                clicked={ () => {props.manageModal(props.modalName, 'CLOSE')} }
+                clicked={ props.cancelFunction }
                 type='DANGER'>
                 Close
             </Button>

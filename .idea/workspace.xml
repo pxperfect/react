@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="629acd79-f384-4b15-9e03-a34359c5162f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/axios/axios-orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Burger/PurchaseModal/PurchaseModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/PurchaseModal/PurchaseModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Aux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Aux/Aux.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -90,7 +92,7 @@
       <workItem from="1586080487723" duration="182000" />
       <workItem from="1586185973800" duration="431000" />
       <workItem from="1586787961541" duration="4837000" />
-      <workItem from="1589105988716" duration="52237000" />
+      <workItem from="1589105988716" duration="54380000" />
     </task>
     <task id="LOCAL-00001" summary="no message">
       <created>1589557126712</created>
@@ -106,11 +108,29 @@
       <option name="project" value="LOCAL" />
       <updated>1589559838432</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="no message">
+      <created>1589568109333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589568109333</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="no message" />
@@ -121,10 +141,10 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="635" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1585992392867" />
-    <state x="490" y="35" key="CommitChangelistDialog2" timestamp="1589559838236">
+    <state x="490" y="35" key="CommitChangelistDialog2" timestamp="1589568109077">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="490" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1589559838236" />
+    <state x="490" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1589568109077" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1589384807292">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
