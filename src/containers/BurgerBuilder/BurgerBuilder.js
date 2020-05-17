@@ -9,6 +9,8 @@ import ModalConstructor from "../../components/UI/Modal/ModalConstructor/ModalCo
 import PurchaseModal from "../../components/Burger/PurchaseModal/PurchaseModal";
 // Styles.
 import styles from './BurgerBuilder.module.css'
+// Axios.
+import axios from '../../axios/axios-orders';
 
 class BurgerBuilder extends React.Component{
     state = {
@@ -21,6 +23,7 @@ class BurgerBuilder extends React.Component{
         totalPrice: 0,
         purchasable: true,
         purchaseModal: false,
+        displaySpinner: false
     };
 
     manageIngredientCount = (ingredientName, operationType) => {
@@ -53,6 +56,33 @@ class BurgerBuilder extends React.Component{
         this.setState(state)
     };
 
+    submitOrder = async () => {
+        const order = {
+            ingredients: {...this.state.ingredients},
+            price: this.state.totalPrice,
+            customer: {
+                id: 1,
+                name: 'Marcin',
+                address: {
+                    street: 'TestStreet',
+                    zipCode: '222-030',
+                    country: 'Poland'
+                },
+                email: 'test@email.com'
+            },
+            deliveryMethod: 'fastest'
+        };
+
+        this.setState({spinner: true});
+
+        console.log(this.state.displaySpinner);
+        axios.post('/orders.json', order).then(response => {
+            console.log(response);
+            console.log(this.state.displaySpinner);
+            this.setState({spinner: false});
+        })
+    };
+
     render() {
         return (
             <Aux>
@@ -63,11 +93,12 @@ class BurgerBuilder extends React.Component{
                     purchasable={ this.state.purchasable }
                     managePurchaseSummaryModal={ this.manageModal }
                     manageIngredientCount={ this.manageIngredientCount }/>
-                {/*modals*/}
+                {/*modals etc...*/}
                 <ModalConstructor
                     show={this.state.purchaseModal}
-                    submitFunction={ () => {this.manageModal('purchaseModal', 'CLOSE')} }
+                    submitFunction={ () => {this.submitOrder()} }
                     cancelFunction={ () => {this.manageModal('purchaseModal', 'CLOSE')} }
+                    displaySpinner={ this.state.displaySpinner }
                     header='Purchase summary'>
                     <PurchaseModal
                         key='purchaseModal'

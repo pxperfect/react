@@ -7,12 +7,14 @@ const modalFooter = (props) => {
         <div className={styles.modalFooterWrapper}>
             <Button
                 clicked={ props.submitFunction }
-                type='PRIMARY'>
+                type='PRIMARY'
+                disabled={ props.displaySpinner }>
                 Continue
             </Button>
             <Button
                 clicked={ props.cancelFunction }
-                type='DANGER'>
+                type='DANGER'
+                disabled={ props.displaySpinner }>
                 Close
             </Button>
         </div>
