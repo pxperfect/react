@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="629acd79-f384-4b15-9e03-a34359c5162f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Spinner/Spinner.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalConstructor/ModalConstructor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/ModalFooter/ModalFooter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/BurgerBuilder/BurgerBuilder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +85,7 @@
       <workItem from="1586080487723" duration="182000" />
       <workItem from="1586185973800" duration="431000" />
       <workItem from="1586787961541" duration="4837000" />
-      <workItem from="1589105988716" duration="58917000" />
+      <workItem from="1589105988716" duration="60122000" />
     </task>
     <task id="LOCAL-00001" summary="no message">
       <created>1589557126712</created>
@@ -119,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589657838418</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="no message">
+      <created>1589718182265</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589718182265</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,18 +148,18 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="635" y="310" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1585992392867" />
-    <state x="490" y="35" key="CommitChangelistDialog2" timestamp="1589657838232">
+    <state x="490" y="35" key="CommitChangelistDialog2" timestamp="1589718181849">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="490" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1589657838232" />
+    <state x="490" y="35" key="CommitChangelistDialog2/0.23.1920.1177@0.23.1920.1177" timestamp="1589718181849" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1589712552053">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.23.1920.1177@0.23.1920.1177" timestamp="1589712552053" />
-    <state x="460" y="283" key="Vcs.Push.Dialog.v2" timestamp="1589657842722">
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2" timestamp="1589718186474">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="460" y="283" key="Vcs.Push.Dialog.v2/0.23.1920.1177@0.23.1920.1177" timestamp="1589657842722" />
+    <state x="460" y="283" key="Vcs.Push.Dialog.v2/0.23.1920.1177@0.23.1920.1177" timestamp="1589718186474" />
     <state x="100" y="123" width="1720" height="977" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589121816664">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>

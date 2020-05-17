@@ -73,14 +73,13 @@ class BurgerBuilder extends React.Component{
             deliveryMethod: 'fastest'
         };
 
-        this.setState({spinner: true});
-
-        console.log(this.state.displaySpinner);
-        axios.post('/orders.json', order).then(response => {
-            console.log(response);
-            console.log(this.state.displaySpinner);
-            this.setState({spinner: false});
-        })
+        this.setState({displaySpinner: true});
+        try {
+            await axios.post('/orders.json', order);
+            this.setState({displaySpinner: false});
+        } catch (e) {
+            this.setState({displaySpinner: false});
+        }
     };
 
     render() {
